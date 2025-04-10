@@ -1,5 +1,9 @@
+"use client"
+
 import React from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
+import Button from '../Global/Button';
 import ticket1 from '@/assets/HomePage/ticket1.png';
 import ticket2 from '@/assets/HomePage/ticket2.png';
 import ticket3 from '@/assets/HomePage/ticket3.png';
@@ -9,15 +13,32 @@ import ticket5 from '@/assets/HomePage/ticket5.png';
 const tickets = [ticket1, ticket2, ticket3, ticket4, ticket5];
 
 const CardSection = () => {
+  const router = useRouter();
+  
+  const handleEventCreate = () => {
+    router.push('/event-create');
+  };
+
   return (
     <section className="flex flex-col items-center justify-center bg-[#101012] text-white py-16">
       <h2 className="text-[35px] font-bold mb-8 text-center">
         <p>한 장의 티켓에</p>
         <p>현장을 담다</p>
       </h2>
-      <button className="w-[430px] h-[98px] top-0 left-0 rounded-[100px] [background:linear-gradient(90deg,rgba(4,112,247,1)_0%,rgba(0,185,173,1)_100%)] text-[35px]">
-        이벤트 만들기
-      </button>
+      
+      <Button
+        text="이벤트 만들기"
+        onClick={handleEventCreate}
+        style={{
+          width: '430px',
+          height: '98px',
+          borderRadius: '100px',
+          background: 'linear-gradient(90deg, rgba(4,112,247,1) 0%, rgba(0,185,173,1) 100%)',
+          fontSize: '35px',
+          marginBottom: '20px'
+        }}
+      />
+
       <div className="flex justify-center space-x-4 p-4">
         {tickets.map((ticket, index) => (
           <div
