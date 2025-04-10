@@ -28,7 +28,6 @@ const Step1Channel: React.FC = () => {
           </select>
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>
             <Button text="새 채널 개설하기" onClick={handleCreateChannel} color="white" />
-            <Button text="다음" onClick={handleNext} color="point" />
           </div>
         </>
       ) : (
@@ -76,7 +75,6 @@ const Step1Channel: React.FC = () => {
             </div>
             <Button text="채널 프로필 업로드" onClick={() => console.log('Upload')} color="white" />
           </div>
-          <Button text="다음" onClick={handleNext} color="point" />
         </>
       )}
     </div>

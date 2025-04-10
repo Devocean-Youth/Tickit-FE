@@ -107,7 +107,6 @@ const Step2EventDetail: React.FC = () => {
           style={{ width: '100%', padding: '10px', marginBottom: '10px' }}
         />
       </div>
-      <Button text="다음" onClick={handleNext} color="point" />
     </div>
   );
 };
