@@ -18,7 +18,7 @@ const Button: React.FC<ButtonProps> = ({
   // Predefined color mapping
   const getButtonColor = (colorValue: ButtonVariant | string): string => {
     const colorMap: Record<ButtonVariant, string> = {
-        point: '#4CAF50', // point color
+        point: '#1B56FD', // point color
         white: '#FFFFFF', // white color
     };
     

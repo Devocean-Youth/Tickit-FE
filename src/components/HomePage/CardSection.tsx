@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react';
 import Image from 'next/image';
 import ticket1 from '@/assets/HomePage/ticket1.png';
