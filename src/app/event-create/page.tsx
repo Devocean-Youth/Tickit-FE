@@ -3,7 +3,7 @@
 import React from 'react';
 import Step1Channel from '../../components/CreateEventPage/Step1Channel';
 import Step2EventDetail from '@/components/CreateEventPage/Step2EventDetail';
-
+import Step3Category from '@/components/CreateEventPage/Step3Category';
 const EventCreatePage: React.FC = () => {
   return (
     <div style={{ padding: '20px' }}>
@@ -11,6 +11,8 @@ const EventCreatePage: React.FC = () => {
       <Step1Channel />
       <h1>이벤트 상세</h1>
       <Step2EventDetail />
+      <h1>이벤트 카테고리</h1>
+      <Step3Category />
     </div>
   );
 };
